@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Sweet World 🌸</title>
+    <!-- ربط ملف التصميم -->
+    <link rel="stylesheet" href="style.css">
+    <!-- إضافة خط كيوت من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- الواجهة الترحيبية -->
+    <div class="welcome-container" id="welcomeScreen">
+        <div class="hello-kitty-box">
+            <!-- صورة هيلو كيتي -->
+            <img src="kitty.png" alt="Hello Kitty" class="kitty-img">
+            
+            <h1>      زهرتي الحلوة احبج واحب كلشي تسوي الية🌸</h1>
+            <p>          سويتلج هذا الموقع لانو كل لحظة وياج تستاهل تنحفظ للابد💗...</p>
+            
+            <!-- زر الدخول -->
+            <button class="cute-btn" onclick="openWebsite()">    چكو هنا🤔💗</button>
+        </div>
+    </div>
+
+    <!-- محتوى الموقع الرئيسي (يظهر بعد الضغط على الزر) -->
+    <main class="main-content" id="mainContent" style="display: none;">
+        <header>
+            <h1>🎀 فديوهاتج النااااارر  🎀</h1>
+            <p>     ( الفكرة مو كلش بس عبريلي اياهة😗)</p>
+        </header>
+
+        <!-- قسم الڤيديوهات -->
+        <section class="videos-section">
+           
+            <div class="video-grid">
+                
+                <!-- الفيديو الأول -->
+                <div class="video-card">
+                    <video controls>
+                        <source src="video1.mp4" type="video/mp4">
+                        متصفحك لا يدعم عرض الفيديو
+                    </video>
+                    <p class="video-note">.اهنا طالعة جنج ملاك من الجنه وكيكك 💕</p>
+                </div>
+
+                <!-- الفيديو الثاني -->
+                <div class="video-card">
+                    <video controls>
+                        <source src="video2.mp4" type="video/mp4">
+                        متصفحك لا يدعم عرض الفيديو
+                    </video>
+                    <p class="video-note">  وهنا اني معت خربت تخربطت خصوصا بالاخيررررررررررر</p>
+                </div>
+
+            </div>
+            <!-- زر الانتقال للعبة (يطلع هنا حصراً بعد الفيديوهات) -->
+            <div style="margin-top: 30px; text-align: center;">
+                <button class="cute-btn" onclick="openGamePage()">    خلينا نلعب لعبة بسيطة😝</button>
+            </div>
+        </section>
+    </main>
+        </section>
+    </main>
+
+    <!-- صفحة اللعبة (تكون مخفية بالبداية) -->
+    <div class="game-container" id="gameContainer" style="display: none;">
+        <h2>❌ إكس أو وية الكيوتة ⭕</h2>
+       
+        
+        <!-- شبكة اللعبة 3x3 -->
+        <div class="tic-tac-toe-board" id="board">
+            <div class="cell" onclick="makeMove(0)"></div>
+            <div class="cell" onclick="makeMove(1)"></div>
+            <div class="cell" onclick="makeMove(2)"></div>
+            <div class="cell" onclick="makeMove(3)"></div>
+            <div class="cell" onclick="makeMove(4)"></div>
+            <div class="cell" onclick="makeMove(5)"></div>
+            <div class="cell" onclick="makeMove(6)"></div>
+            <div class="cell" onclick="makeMove(7)"></div>
+            <div class="cell" onclick="makeMove(8)"></div>
+        </div>
+
+        <!-- رسالة الفوز السرية (تطلع لما تفوز) -->
+        <div id="winMessage" class="win-message" style="display: none;">
+            <h3>      فازت ملكتي الحلوة 😻🌸</h3>
+            <p>             لزهرة حياتي الحلوة الي صارت جزء ما يتجزأ من ايامي ما اعرف من وين ابلش بس شما اكتب وشما احاول ارتب مشاعري  الي متراكمة بكلبي احس الكلمات تضلم المشاعر الي احسها بس الشي الوحيد الي اعرفة انو اني احبج هواي وانتي ملكتي الحلوة الي احبج اوموت عليج وما اكدر استغني عنج ولو لحظة احبج مو بس لان انتي حبيبتي احبج لانو صرتي الشخص الوحيد الي احس ويا بالامان العاطفي والراحة واحبج لانو صرتي الشخص الوحيد الي احجيلة تفاصيل يومي حتى التفاصيل البسيطة الي يمكن ما تهم احد بس انتي تخليها تفاصيل حلوة وممتعة احب طريقة وجودج يمي بحيث تتحسسيني بيهاانو اكو شخص يهتم بية فعلا احبج يا روح روح روحي احبج ملاكي واميرتي الحلوة 💖💖🤍"</p>
+           
+        </div>
+    </div>
+    <!-- ربط ملف الجافا سكربت -->
+    <script src="script.js"></script>
+</body>
+</html>
